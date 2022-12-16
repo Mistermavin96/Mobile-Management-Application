@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="366dp"
+        android:layout_height="6dp"
+        tools:layout_editor_absoluteX="52dp"
+        tools:layout_editor_absoluteY="240dp">
+
+        <TextView
+            android:id="@+id/lbl_CourseTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/title"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/txt_CourseTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="none"
+            android:hint="@string/hintText"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lbl_CourseTitle"
+            android:importantForAutofill="no" />
+
+        <TextView
+            android:id="@+id/lbl_courseTerm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/term"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.501"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_CourseTitle" />
+
+        <Spinner
+            android:id="@+id/spn_courseTerm"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:prompt="@string/courseTerm"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lbl_courseTerm" />
+
+        <TextView
+            android:id="@+id/lbl_CourseStartDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/pick_start_date"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spn_courseTerm" />
+
+        <TextView
+            android:id="@+id/lbl_CourseEndDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="12dp"
+            android:text="@string/pick_end_date"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spn_courseTerm" />
+
+        <TextView
+            android:id="@+id/lbl_statusCourse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="@string/courseStatus"
+            app:layout_constraintEnd_toStartOf="@+id/lbl_CourseEndDate"
+            app:layout_constraintStart_toEndOf="@+id/lbl_CourseStartDate"
+            app:layout_constraintTop_toBottomOf="@+id/swt_CourseStartAlert" />
+
+        <Spinner
+            android:id="@+id/spn_statusCourse"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:spinnerMode="dropdown"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lbl_statusCourse" />
+
+        <TextView
+            android:id="@+id/lbl_CourseNotes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/notes"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.501"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spn_statusCourse" />
+
+        <EditText
+            android:id="@+id/txt_CourseNotes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:hint="@string/hintText"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lbl_CourseNotes"
+            android:importantForAutofill="no" />
+
+        <TextView
+            android:id="@+id/lbl_InstructorName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/instructor_name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_CourseNotes" />
+
+        <EditText
+            android:id="@+id/txt_InstructorName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="@string/hintText"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lbl_InstructorName"
+            android:importantForAutofill="no" />
+
+        <TextView
+            android:id="@+id/lbl_InstructorPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/instructor_phone_number"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_InstructorName" />
+
+        <EditText
+            android:id="@+id/txt_InstructorPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/hintText"
+            android:importantForAutofill="no"
+            android:inputType="phone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lbl_InstructorPhone" />
+
+        <TextView
+            android:id="@+id/lbl_InstructorEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/instructor_e_mail_address"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_InstructorPhone" />
+
+        <EditText
+            android:id="@+id/txt_InstructorEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:hint="@string/hintText"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lbl_InstructorEmail"
+            android:importantForAutofill="no" />
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/swt_CourseStartAlert"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:text="@string/alert_on_start"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_CourseStartDate" />
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/swt_CourseEndAlert"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:text="@string/alert_on_end"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_CourseEndDate" />
+
+        <ImageButton
+            android:id="@+id/btn_CourseStartDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="@+id/lbl_CourseStartDate"
+            app:layout_constraintStart_toStartOf="@+id/lbl_CourseStartDate"
+            app:layout_constraintTop_toBottomOf="@+id/lbl_CourseStartDate"
+            app:srcCompat="@android:drawable/ic_menu_my_calendar" />
+
+        <ImageButton
+            android:id="@+id/btn_CourseEndDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="@+id/lbl_CourseEndDate"
+            app:layout_constraintStart_toStartOf="@+id/lbl_CourseEndDate"
+            app:layout_constraintTop_toBottomOf="@+id/lbl_CourseEndDate"
+            app:srcCompat="@android:drawable/ic_menu_my_calendar" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

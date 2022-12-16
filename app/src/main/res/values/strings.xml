@@ -1,0 +1,71 @@
+<resources>
+    <string name="app_name">WGU Scheduler</string>
+    <string name="title_activity_settings">SettingsActivity</string>
+
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+    <string name="textview">Welcome back, User!</string>
+    <string name="terms">Terms</string>
+    <string name="courses">Courses</string>
+    <string name="assessments">Assessments</string>
+    <string name="home_icon">Home icon</string>
+    <string name="action_settings">Settings</string>
+    <string name="clear_data">Clear Data</string>
+    <string name="night_mode">Night Mode</string>
+    <string name="preference_file_key" />
+    <string name="option_menu">Option Menu</string>
+    <string name="add_new_item">Add new item</string>
+    <string name="extended_view">Extended View</string>
+    <string name="start_date">Start Date(DDMMYYYY)</string>
+    <string name="end_date">End Date(DDMMYYYY)</string>
+    <string name="title">Title</string>
+    <string name="typeSpn">Type</string>
+    <string name="courseTitle">Title</string>
+    <string name="notes">Notes</string>
+    <string name="hintText">Write Something...</string>
+    <string name="courseStatus">Status</string>
+    <string name="courseTerm">Select Term</string>
+    <string name="instructor_name">Instructor Name</string>
+    <string name="instructor_phone_number">Instructor Phone Number</string>
+    <string name="instructor_e_mail_address">Instructor E-mail Address</string>
+    <string name="addAlert">Alert on start and end</string>
+    <string name="term">Term</string>
+    <string name="course">Course</string>
+    <string name="editTerm">Edit Term</string>
+    <string name="DeleteTerm">Delete Term</string>
+    <string name="editAssessment">Edit Assessment</string>
+    <string name="DeleteAssessment">Delete Assessment</string>
+    <string name="instructor">Instructor</string>
+    <string name="extend_simplify">Extend or Simplify View</string>
+    <string name="action_options">Options</string>
+    <string name="pick_end_date">Pick End Date</string>
+    <string name="pick_start_date">Pick start date</string>
+    <string name="alert_on_start">Alert on start</string>
+    <string name="alert_on_end">Alert on End</string>
+    <string-array name="AssessmentTypeArray">
+        <item>Performance</item>
+        <item>Objective</item>
+    </string-array>
+    <string-array name="CourseStatusArray">
+        <item>In Progress</item>
+        <item>Completed</item>
+        <item>Dropped</item>
+        <item>Plan To Take</item>
+    </string-array>
+    <string-array name="termArray">
+    </string-array>
+    <string-array name="courseArray">
+    </string-array>
+</resources>

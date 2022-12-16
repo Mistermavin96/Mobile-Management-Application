@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/swt_TermStartAlert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:text="@string/alert_on_start"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_TermStartDate" />
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/swt_TermEndAlert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="12dp"
+        android:text="@string/alert_on_end"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_TermEndDate" />
+
+    <TextView
+        android:id="@+id/lbl_editTitleTerm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txt_editTitleTerm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/hintText"
+        android:minHeight="48dp"
+        android:textColorHint="#546E7A"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lbl_editTitleTerm"
+        tools:ignore="DuplicateSpeakableTextCheck"
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/lbl_editStartTerm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:text="Pick Start Date"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_editTitleTerm" />
+
+    <TextView
+        android:id="@+id/lbl_editEndTerm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/pick_end_date"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.95"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_editTitleTerm" />
+
+    <ImageButton
+        android:id="@+id/btn_TermEndDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@+id/lbl_editEndTerm"
+        app:layout_constraintStart_toStartOf="@+id/lbl_editEndTerm"
+        app:layout_constraintTop_toBottomOf="@+id/lbl_editEndTerm"
+        app:srcCompat="@android:drawable/ic_menu_my_calendar" />
+
+    <ImageButton
+        android:id="@+id/btn_TermStartDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        app:layout_constraintEnd_toEndOf="@+id/lbl_editStartTerm"
+        app:layout_constraintStart_toStartOf="@+id/lbl_editStartTerm"
+        app:layout_constraintTop_toBottomOf="@+id/lbl_editStartTerm"
+        app:srcCompat="@android:drawable/ic_menu_my_calendar" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

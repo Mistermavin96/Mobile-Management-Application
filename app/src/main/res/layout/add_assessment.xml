@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/lbl_editAssessmentTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txt_editAssessmentTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/hintText"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lbl_editAssessmentTitle"
+        android:importantForAutofill="no" />
+
+    <TextView
+        android:id="@+id/lbl_editStartAssessment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/pick_start_date"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_editAssessmentTitle" />
+
+    <TextView
+        android:id="@+id/lbl_editEndAssessment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/pick_end_date"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_editAssessmentTitle" />
+
+    <TextView
+        android:id="@+id/lbl_typeAssessment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/typeSpn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/swt_AssessmentAlert" />
+
+    <Spinner
+        android:id="@+id/spn_typeAssessment"
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:spinnerMode="dropdown"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lbl_typeAssessment" />
+
+    <TextView
+        android:id="@+id/lbl_AssessmentCourse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="@string/course"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spn_typeAssessment" />
+
+    <Spinner
+        android:id="@+id/spn_AssessmentCourse"
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:spinnerMode="dropdown"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lbl_AssessmentCourse" />
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/swt_AssessmentAlert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:text="@string/alert_on_start"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_AssessmentStartDate" />
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/swt_AssessmentAlert2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="12dp"
+        android:text="@string/alert_on_end"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_AssessmentEndDate" />
+
+    <ImageButton
+        android:id="@+id/btn_AssessmentStartDate"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        app:layout_constraintEnd_toEndOf="@+id/lbl_editStartAssessment"
+        app:layout_constraintStart_toStartOf="@+id/lbl_editStartAssessment"
+        app:layout_constraintTop_toBottomOf="@+id/lbl_editStartAssessment"
+        app:srcCompat="@android:drawable/ic_menu_my_calendar" />
+
+    <ImageButton
+        android:id="@+id/btn_AssessmentEndDate"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        app:layout_constraintEnd_toEndOf="@+id/lbl_editEndAssessment"
+        app:layout_constraintStart_toStartOf="@+id/lbl_editEndAssessment"
+        app:layout_constraintTop_toBottomOf="@+id/lbl_editEndAssessment"
+        app:srcCompat="@android:drawable/ic_menu_my_calendar" />
+</androidx.constraintlayout.widget.ConstraintLayout>
